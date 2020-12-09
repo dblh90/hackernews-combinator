@@ -10,3 +10,5 @@ This is a script that grabs the top story from https://news.ycombinator.com/ and
 - Open your `.bashrc` with an editor of your choice (Vim for example)
 - Append this line to the end of the file on a separate line `[your-prefered-directory-path]/script/news-combinator.sh`
 - Watch what happens afterwards everytime you open a new session on the terminal
+
+![A new terminal session with hackernews-combinator](https://doubleh90-assets.s3.amazonaws.com/Screenshot+from+2020-12-09+14-15-00.png)
