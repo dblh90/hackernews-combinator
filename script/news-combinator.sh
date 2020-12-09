@@ -26,3 +26,4 @@ reset_style='\033[00m'
 echo "${headline_style}Top story from Hacker news${reset_style}"
 echo "Title: ${title_style}${top_story_title}${reset_style}"
 echo "Click here: ${url_style}${top_story_url}${reset_style}"
+echo "Posted at: ${top_story_posting_time_converted}"
