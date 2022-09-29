@@ -1,0 +1,16 @@
+name: Test-Workflow
+on: [push]
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚴 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "⏳ This job is now running on a ${{ runner.os }} server hosted by Github!"
+      - run: echo "☝️ The name of the branch is ${{ github.ref }} and the repo's name is ${{ github.repository }}."
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+      - run: echo "🎉 The ${{ github.repository }} repository has been cloned"
+      - run: echo "💯 The runner is ready to test your code"
+      - name: List files in the repository
+        run: ls ${{ github.workspace }}
+      - run: echo "This job status is ${{ job.status }}"
